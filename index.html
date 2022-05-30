@@ -43,14 +43,123 @@
       #banner>div:nth-child(2){
         display: flex;
       }
+      
+      /* SERVICE AREA */
+
+      #services{
+        height: 250px;
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(1,200px);
+        
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+
+      }
+      #services>div{
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+       
+        height: 250px;
+        
+      }
+
+      #services>div>img{
+        width: 140px;
+        margin-left: 20px;
+        
+       
+        background-color: #bbdefb;
+      }
+      #services>div>img+h2{
+        font-size: 19px
+       
+        
+      }
+      #services>div>img+h2+h2{
+        font-size: 19px;
+        
+      }
+      
+      #services>div>img+h2+h2+p{
+        font-size: 11px;
+        padding-top: 10px;
+       
+      }
+
+      /* WORK */
+     #works>h1{
+        text-align: center;
+        margin-top: 30px;
+     }
+
+
+     #works>h1+p{
+       text-align: center;
+       margin-bottom: 20px;
+     }
+
+
+     #works>div{
+       width: 80%;;
+       display: grid;;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: repeat(2,200px);
+       
+       margin: auto;
+       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     }
+
+    .photo{
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    }
+
+    .photo>img{
+      width: 200px;
+      margin-left: 25px;
+    }
+
+    .photo>img+h2{
+      margin-left: 20px;
+      font-size: 19px;
+    }
+
+    .photo>img+h2+p{
+      margin-left: 20px;
+
+    }
+
 
 
       /* Medium Screen */
       @media only screen and (min-width: 500px) and (max-width: 768px) {
+        #services{
+          grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,200px);
+        }
+
+        #works>div{
+          grid-template-columns: repeat(2,1fr);
+       grid-template-rows: repeat(4,200px);
+        }
+
       }
 
       /* Small Screen */
       @media only screen and (min-width: 320px) and (max-width: 499px) {
+
+        #services{
+          grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,200px);
+        }
+
+        #works>div{
+          grid-template-columns: repeat(1,1fr);
+       grid-template-rows: repeat(8,200px);
+        }
+
       }
     </style>
   </head>
@@ -71,12 +180,99 @@
 
       <div id="services">
         <!-- Here should be 6 divs. All of them should be in a single line for large screen. For medium and large screen refer to question statement -->
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor image">
+           <h2>instant Video </h2>
+           <h2>consultation</h2>
+           <p>Connect Within 60 secs</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor image">
+          <h2>instant Video </h2>
+           <h2>consultation</h2>
+           <p>Connect Within 60 secs</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor image">
+          <h2>instant Video </h2>
+           <h2>consultation</h2>
+           <p>Connect Within 60 secs</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor image">
+          <h2>instant Video </h2>
+           <h2>consultation</h2>
+           <p>Connect Within 60 secs</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor image">
+          <h2>instant Video </h2>
+           <h2>consultation</h2>
+           <p>Connect Within 60 secs</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="doctor image">
+          <h2>instant Video </h2>
+           <h2>consultation</h2>
+           <p>Connect Within 60 secs</p>
+        </div>
+        
       </div>
       <div id="works">
         <h1>Book an appointment for an in-clinic consultation</h1>
         <p>Find experienced doctors across all specialties</p>
         <div>
           <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+          <div class="photo">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h2>Dentist</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+         
+          </div >
+
+          <div class="photo">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h2>Dentist</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            
+
+          </div>
+
+          <div class="photo">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h2>Dentist</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="photo">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h2>Dentist</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="photo">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h2>Dentist</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="photo">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h2>Dentist</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="photo">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h2>Dentist</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="photo">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h2>Dentist</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
         </div>
       </div>
     </div>
